@@ -33,13 +33,13 @@ if (count($errors)> 0){
   $country = $_POST['country'];
   switch ($_POST['subject']) {
     case '1':
-    $subject = "others";
-    break;
-    case '2':
     $subject = "order";
     break;
-    default:
+    case '2':
     $subject = "technical support";
+    break;
+    default:
+    $subject = "others";
   };
   $message = $_POST['message'];
 }
@@ -146,7 +146,7 @@ function save_mail($mail)
     <div class="container">
       <div class="row">
         <div class="col s12 center">
-            <h5>Your message has been sent. We'll be in touch shortly!</h5>
+            <h4>Your message has been sent. We'll be in touch shortly!</h4>
         </div>
       </div>
     </div>

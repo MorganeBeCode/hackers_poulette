@@ -24,9 +24,9 @@
       <div class="nav-wrapper">
         <img class="brand-logo center" id="logo" src="assets/img/hackers-poulette-logo.png" alt="logo">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Home</a></li>
-          <li><a href="badges.html">About</a></li>
-          <li><a href="collapsible.html">Shop</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Shop</a></li>
         </ul>
       </div>
     </nav>
@@ -86,8 +86,8 @@
               <label for="country" class="active">Country<abbr title="Please fill out this field">*</abbr></label>
               <select name="country" id="country" class="browser-default validate" required aria-required="true">
                 <option name="select" value="" disabled selected>Please select your country</option>
-                <?php foreach ($countries as $key => $country){
-              echo '<option name="'.$country.'"value="'.$key.'">'.$country.'</option>';
+                <?php foreach ($countries as $country){
+              echo '<option name="'.$country.'"value="'.$country.'">'.$country.'</option>';
               }?>
               </select>
               <span class="helper-text" data-error="Country is required" data-success="OK"></span>
@@ -99,9 +99,9 @@
             <div class="input-field col s3">
               <label for="subject" class="active">Subject</label>
               <select name="subject" id="subject" class="browser-default">
-                <option name="others" value="1" selected>Others</option>
-                <option name="order" value="2">Order</option>
-                <option name="technical_support" value="3">Technical support</option>
+                <option name="order" value="1">Order</option>
+                <option name="technical_support" value="2">Technical support</option>
+                <option name="others" value="3" selected>Others</option>
               </select>
             </div>
             <div class="col offset-s9"></div>
@@ -117,7 +117,7 @@
           </div>
           <!--HONEYPOT-->
           <div class="input-field col s12 hide">
-            <input id="website" name="website" type="text" value="test">
+            <input id="website" name="website" type="text">
             <label for="website">Website</label>
           </div>
           <!--Send button-->
@@ -140,6 +140,7 @@
           <div class="input-field col s9">
             <label for="email_news" id="label_news">Email</label>
             <input name="email_news" id="email_news" type="email" class="validate">
+            <span class="helper-text" data-error="Invalid format, please check your email address"></span>
           </div>
           <button class="btn waves-effect waves-light right" id="button_news" type="submit" name="submit">
             Submit
