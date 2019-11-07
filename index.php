@@ -82,13 +82,13 @@
           <!--Countries select-->
           <div class="row">
             <div class="input-field col s4">
-              <?php include 'countries.php';?>
+              <?php include 'countries.php'; ?>
               <label for="country" class="active">Country<abbr title="Please fill out this field">*</abbr></label>
               <select name="country" id="country" class="browser-default validate" required aria-required="true">
                 <option name="select" value="" disabled selected>Please select your country</option>
-                <?php foreach ($countries as $country){
-              echo '<option name="'.$country.'"value="'.$country.'">'.$country.'</option>';
-              }?>
+                <?php foreach ($countries as $country) {
+                  echo '<option name="' . $country . '"value="' . $country . '">' . $country . '</option>';
+                } ?>
               </select>
               <span class="helper-text" data-error="Country is required" data-success="OK"></span>
             </div>
@@ -110,8 +110,7 @@
           <div class="row">
             <div class="input-field col s12">
               <label for="message">Message<abbr title="Please fill out this field">*</abbr></label>
-              <textarea name="message" id="message" class="materialize-textarea validate" required
-                aria-required="true"></textarea>
+              <textarea name="message" id="message" class="materialize-textarea validate" required aria-required="true"></textarea>
               <span class="helper-text" data-error="Message is required" data-success="OK"></span>
             </div>
           </div>
@@ -174,7 +173,7 @@
         <span class="right">
           <a target="_blank" href="https://icons8.com/icons/set/chicken">Chicken</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </span>
-    </div>
+      </div>
     </div>
   </footer>
 
