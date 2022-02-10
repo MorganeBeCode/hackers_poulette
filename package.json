@@ -20,7 +20,7 @@
   "homepage": "https://github.com/MorganeBeCode/hackers_poulette#readme",
   "dependencies": {
     "https-localhost": "^4.4.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {}
 }
